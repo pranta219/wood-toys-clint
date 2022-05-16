@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Fire Truck",
+        "price": "1750",
+        "description": "The Fire Truck is a self-propelled wooden model from the new Trucks collection",
+        "img": "https://ligno.com.ua/861-large_default/wooden-3d-puzzle-fire-truck.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Microscope",
+        "price": "1215",
+        "description": "Take parts out of wooden holders and assemble by manual of wooden holder.",
+        "img": "https://ligno.com.ua/1302-large_default/wooden-3d-puzzle-microscope.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Plane",
+        "price": "749",
+        "description": "Flight, one of mans greatest accomplishments! Building your own plane, now that is an accomplishment that only a few, like the Wright Brothers.",
+        "img": "https://ligno.com.ua/2175-large_default/wooden-3d-puzzle-plane.jpg"
+    },
+    {
+        "id": 4,
+        "name": "First car",
+        "price": "557",
+        "description": "No, were not talking about your first car during college. The first car is a model of the first car ever built that was reminiscent.",
+        "img": "https://ligno.com.ua/2162-large_default/wooden-3d-puzzle-first-car.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Buggy",
+        "price": "294",
+        "description": "The Buggy model is one of the most original and unusual toys in the collection of 3D wooden construction sets.",
+        "img": "https://ligno.com.ua/2183-large_default/wooden-3d-puzzle-buggy.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Tower Windmill",
+        "price": "1500",
+        "description": "The Victorian Age filled with the spirit of the Industrial Revolution is a source of internal inspiration for designers and engineers.",
+        "img": "https://ligno.com.ua/3243-large_default/wooden-3d-puzzle-tower-windmill.jpg"
+    }
+]

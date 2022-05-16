@@ -1,0 +1,43 @@
+.banner {
+    background-image: linear-gradient(#0F2027, #203A43, #2C5364);
+    height: 700px;
+    margin-bottom: 50px;
+}
+
+.banner img {
+    margin-top: 80px;
+}
+
+.banner .link {
+    color: #2C5364;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 6px;
+    background-color: #f2f5f7;
+    padding: 5px;
+    margin-left: 0px;
+}
+
+.banner .link:hover {
+    background-color: #DFCBAE;
+    border: 1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+.mt {
+    margin-top: 320px;
+}
+
+@media only screen and (max-width:576px) {
+    .banner img {
+        margin: 80px;
+        margin-left: -136px;
+
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px) {
+    .banner img {
+        margin-top: 200px;
+    }
+}

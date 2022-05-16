@@ -1,0 +1,27 @@
+.bg {
+    background-color: #0d182a;
+}
+
+.login-button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 1em;
+    padding: 0.4rem 0.8rem;
+    margin-left: 1vw;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.login-button:hover {
+    background-color: #DFCBAE;
+    border: 1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+.link {
+    text-decoration: none;
+    color: #f2f5f7;
+    margin-left: 15px;
+}

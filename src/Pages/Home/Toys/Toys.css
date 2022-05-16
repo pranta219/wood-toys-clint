@@ -1,0 +1,59 @@
+.visit {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    margin-left: 600px;
+    margin-right: -292px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 6px;
+    background-color: #6ab0e0;
+    padding: 7px;
+}
+
+.view:hover {
+    background-color: #DFCBAE;
+    border: 1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+
+.toy-container {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.toy-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*make responsive*/
+@media only screen and (max-width:576px) {
+    .toy-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .view {
+        margin-left: 189px;
+        margin-right: 189px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px) {
+    .toy-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view {
+        margin-left: 290px;
+        margin-right: -68px;
+    }
+}
