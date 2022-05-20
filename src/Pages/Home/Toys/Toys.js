@@ -15,7 +15,7 @@ const Toys = () => {
     const [toys, setToys] = useState([])
 
     useEffect(() => {
-        fetch('toys.json')
+        fetch('https://warm-citadel-87543.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setToys(data))
     }, [])
@@ -29,11 +29,11 @@ const Toys = () => {
                     <div className='toy-container'>
                         {
                             toys.map(toy => <Toy
-                                key={toy.id}
+                                key={toy._id}
                                 toy={toy}
                             ></Toy>)
                         }
-                        <a className='view' href="/inventory">Visit All</a>
+                        <a className='view' href="/all-toys">Visit All</a>
                     </div>
             }
         </div>

@@ -1,3 +1,11 @@
+.extra {
+    background-color: ghostwhite;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    padding: 30px;
+}
+
 .text {
     font-size: xx-large;
     font-weight: 500;
@@ -8,7 +16,10 @@
     border-radius: 10px;
 }
 
-
+.part {
+    font-family: "Roboto", sans-serif;
+    margin-left: 47px;
+}
 
 .join {
     text-decoration: none;
@@ -68,10 +79,18 @@
     .text {
         margin: 0px;
     }
+
+    .extra {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width:992px) {
     .text {
         margin: 0px;
+    }
+
+    .extra {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
