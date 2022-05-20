@@ -5,26 +5,36 @@ import './ToyDetail.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const ToyDetail = () => {
+    const { toyId } = useParams()
+    const [service, setService] = useState({})
 
+    useEffect(() => {
+        const url = `https://warm-citadel-87543.herokuapp.com/service/${toyId}`
 
-const Delivered = () => toast("Toys Delivered 😊");
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setService(data))
+    }, [])
 
-return (
-    <div className='text-center mt-5'>
-        <div>
-            <h2>You are about to book: {service.name}</h2>
+    const Delivered = () => toast("Toys Delivered 😊");
+
+    return (
+        <div className='text-center mt-5'>
+            <div>
+                <h2>You are about to book: {service.name}</h2>
+            </div>
+            <div className='to text-center mt-5'>
+                <img src={service.img} alt="" />
+                <h2>{service.name}</h2>
+                <p>Price: ${service.price}</p>
+            </div>
+            <Link to=''>
+                <Button onClick={Delivered} className='py-2 rounded-full mt-3'>Delivered</Button>
+            </Link>
+            <ToastContainer />
         </div>
-        <div className='to text-center mt-5'>
-            <img src={service.img} alt="" />
-            <h2>{service.name}</h2>
-            <p>Price: ${service.price}</p>
-        </div>
-        <Link to=''>
-            <Button onClick={Delivered} className='py-2 rounded-full mt-3'>Delivered</Button>
-        </Link>
-        <ToastContainer />
-    </div>
-);
+    );
 };
 
 export default ToyDetail;
