@@ -8,6 +8,6 @@ const useToys = () => {
             .then(res => res.json())
             .then(data => setToys(data))
     }, [])
-
+    return [toys, setToys]
 }
 export default useToys;
